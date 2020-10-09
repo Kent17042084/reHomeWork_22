@@ -22,23 +22,23 @@ public class Logic {
     static Arichmetic getOperation() {
         Scanner sc = new Scanner(System.in);
         Arichmetic operation;
-        System.out.println("please write the operation in a word, for example:\n  PLUS, MINUS, MULTIPLICATION or DIVISION");
+        System.out.println("please write the operation +, -, * or /");
 
         String tmp = sc.nextLine();
         switch (tmp) {
-            case "PLUS":
+
             case "+":
                 operation = Arichmetic.PLUS;
                 break;
-            case "MINUS":
+
             case "-":
                 operation = Arichmetic.MINUS;
                 break;
-            case "MULTIPLICATION":
+
             case "*":
                 operation= Arichmetic.MULTIPLICATION;
                 break;
-            case "DIVISION":
+
             case "/":
                 operation= Arichmetic.DIVISION;
                 break;
