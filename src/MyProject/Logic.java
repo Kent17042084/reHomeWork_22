@@ -40,7 +40,9 @@ public class Logic {
                 break;
 
             case "/":
+
                 operation= Arichmetic.DIVISION;
+
                 break;
             default:
                 operation = Arichmetic.PLUS;
@@ -64,7 +66,11 @@ public class Logic {
                 res = num1 * num2;
                 break;
             case DIVISION:
+                if (num2 == 0) {
+                    throw new ArithmeticException("невозможно выполнить деление на ноль");
+                }
                 res = num1 / num2;
+
                 break;
             default:
                 res = result(num1, num2, getOperation());
